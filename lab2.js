@@ -4,10 +4,10 @@
 const block4 = document.getElementById('block4');
 const block5 = document.getElementById('block5');
 
-function swapBlockInfo (block1, block2) {
-	let tmp = block2.textContent;
-	block2.textContent = block1.textContent;
-	block1.textContent = tmp;
+function swapBlockInfo(block1, block2) {
+	let tmp = block2.innerHTML;
+	block2.innerHTML = block1.innerHTML;
+	block1.innerHTML = tmp;
 }
 
 block4.onclick = function(){
